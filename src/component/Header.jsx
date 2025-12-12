@@ -132,7 +132,7 @@ function Header() {
             <ul className="flex flex-col font-medium space-y-2">
               <li>
                 <NavLink
-                  to="/"
+                  to=""
                   className="block py-2 px-4 text-gray-700 rounded hover:bg-gray-100 hover:text-orange-700"
                   onClick={() => setIsOpen(false)}
                 >
@@ -141,7 +141,7 @@ function Header() {
               </li>
               <li>
                 <NavLink
-                  to="/about"
+                  to="about"
                   className="block py-2 px-4 text-gray-700 rounded hover:bg-gray-100 hover:text-orange-700"
                   onClick={() => setIsOpen(false)}
                 >
@@ -150,7 +150,7 @@ function Header() {
               </li>
               <li>
                 <NavLink
-                  to="/contact"
+                  to="contact"
                   className="block py-2 px-4 text-gray-700 rounded hover:bg-gray-100 hover:text-orange-700"
                   onClick={() => setIsOpen(false)}
                 >

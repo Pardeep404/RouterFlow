@@ -1,21 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { useLoaderData } from "react-router-dom";
 
 function Github() {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const data = useLoaderData();
 
-  useEffect(() => {
-    fetch("https://api.github.com/users/Pardeep404")
-      .then((res) => res.json())
-      .then((data) => {
-        setData(data);
-        setLoading(false);
-      })
-      .catch(() => setLoading(false));
-  }, []);
-
-  if (loading) return <div className="text-center py-10">Loading...</div>;
-  if (!data) return <div className="text-center py-10">No data found</div>;
 
   return (
     <div className="max-w-md mx-auto bg-white p-6 mt-6">
